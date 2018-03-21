@@ -1,0 +1,16 @@
+google
+
+
+
+
+
+1.set up spring(generate app.jar first using maven install)
+
+
+2.how to turn on GCE and install mysql(grant), redis, git, download java. maven.
+
+3.open firewall for users to access external ip 
+
+4.After I close my computer. The springboot app running on GCE will stop running too.
+
+
