@@ -1,0 +1,19 @@
+problem when deploy to google cloud.
+
+1. data base script need to change to small case
+   ex: Table Orders -> orders
+   ex: Table Users -> users
+
+
+cause: it might because google cloud use linux. It is case sensitive
+so I create a new script only for linux O.S
+
+
+
+2.deploy to google cloud with bare computing and install java. It finish starting process for 30 minutes. (This spend me from March 5 - 6, 2018) - debugging this for 14 hours. Because I always closed it before it finish its starting process.
+
+How I solved it : I deploy simple spring app to GCE first and it doesn’t take that long. So we know it is my app’s problem
+
+
+3.Setting up firewall rule. The tomcat is waiting for 8080. It is running inside the GCE. 
+but external client still cannot request webpage from google external IP
